@@ -1,6 +1,8 @@
 package basic.container;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -23,7 +25,7 @@ public class VBoxExample extends Application { // Application을 상속받기 �
 		ImageView iv = new ImageView(); // root 컨테이너 안에 ImageView 컨테이너 담음
 		iv.setFitWidth(200);
 		iv.setPreserveRatio(true);
-		iv.setImage(new Image("/basic/images/duck.jpg")); // bin 폴더 안
+		iv.setImage(new Image("/basic/images/fruit1.jpg")); // bin 폴더 안
 		
 		HBox hbox = new HBox(); // root 컨테이너 안에 HBox 컨테이너 담음
 		hbox.setAlignment(Pos.CENTER); // 가운데 정렬
@@ -37,7 +39,36 @@ public class VBoxExample extends Application { // Application을 상속받기 �
 		hbox.getChildren().add(btnPrev);
 		hbox.getChildren().add(btnNext);
 		VBox.setMargin(hbox, new Insets(10));
-				
+		
+		
+		// 이벤트 핸들러를 해당 컨트롤에 등록 - 1
+		btnNext.setOnAction(new EventHandler<ActionEvent>() { // 익명의 구현 객체인 이벤트핸들러 인터페이스(제너럴 타입은 action event)를 action event로 등록
+			int loc = 1;
+			@Override
+			public void handle(ActionEvent ae) {
+				if(loc == 9)
+					loc = 1;
+				iv.setImage(new Image("/basic/images/fruit" + loc++ + ".jpg"));
+			}
+		});
+		
+		
+//		// 이벤트 핸들러를 해당 컨트롤에 등록 - 2 (람다식)
+//		btnNext.setOnAction((ae) -> {
+//				System.out.println("handle: " + ae.getSource());
+//		});
+		
+		btnPrev.setOnAction(new EventHandler<ActionEvent>() {
+			int loc = 8;
+			@Override
+			public void handle(ActionEvent ae) {
+				if(loc == 0)
+					loc = 8;
+				iv.setImage(new Image("/basic/images/fruit" + loc-- + ".jpg"));
+			}
+		});
+
+		
 		root.getChildren().add(iv);
 		root.getChildren().add(hbox);
 		
