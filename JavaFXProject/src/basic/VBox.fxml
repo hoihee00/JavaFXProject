@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="200.0">
+         <image>
+            <Image url="@images/sample.jpg" />
+         </image>
+      </ImageView>
+      <HBox prefHeight="0.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="60.0" text="이전" />
+            <Button mnemonicParsing="false" prefHeight="23.0" prefWidth="150.0" text="다음">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>

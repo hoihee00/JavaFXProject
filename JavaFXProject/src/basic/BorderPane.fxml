@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane prefWidth="200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <top>
+      <ToolBar BorderPane.alignment="CENTER">
+        <items>
+            <Button mnemonicParsing="false" text="Button" />
+          <Button mnemonicParsing="false" text="Button" />
+        </items>
+      </ToolBar>
+   </top>
+   <center>
+      <TextArea prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <BorderPane BorderPane.alignment="CENTER">
+         <right>
+            <Button mnemonicParsing="false" text="Button" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </bottom>
+</BorderPane>
