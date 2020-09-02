@@ -26,7 +26,7 @@
       	</items>
       </ComboBox>
       <Label layoutX="240.0" layoutY="104.0" text="게시종료" />
-      <DatePicker fx:id="dataExit" layoutX="296.0" layoutY="100.0"
+      <DatePicker fx:id="dateExit" layoutX="296.0" layoutY="100.0"
       	promptText="날짜를 선택하세요" />
       <Label layoutX="22.0" layoutY="135.0" text="내용" />
       <TextArea fx:id="txtContent" layoutX="22.0" layoutY="154.0"
