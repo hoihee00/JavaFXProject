@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<center>
+		<TableView fx:id="tableView" prefHeight="200" prefWidth="420">
+			<columns>
+				<TableColumn prefWidth="65.0" resizable="false" text="고객번호" />
+				<TableColumn prefWidth="75.0" resizable="false" text="이름" />
+				<TableColumn prefWidth="120.0" resizable="false" text="연락처" />
+				<TableColumn prefWidth="159.0" resizable="false" text="이메일" />
+			</columns>
+		</TableView>
+	</center>
+	<bottom>
+		<HBox alignment="CENTER" prefHeight="50" spacing="20">
+			<children>
+				<Button fx:id="btnAdd" text="Add" />
+				<Button fx:id="btnClose" text="Close" />
+			</children>
+		</HBox>
+	</bottom>
+</BorderPane>

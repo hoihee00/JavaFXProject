@@ -3,14 +3,14 @@ package basic.example.db;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
-public class Student {
+public class Student2 {
 	private SimpleIntegerProperty id;
 	private SimpleStringProperty name;
 	private SimpleIntegerProperty korean;
 	private SimpleIntegerProperty math;
 	private SimpleIntegerProperty english;
 	
-	public Student(int id, String name, int korean, int math, int english) {
+	public Student2(int id, String name, int korean, int math, int english) {
 		this.id = new SimpleIntegerProperty(id);
 		this.name = new SimpleStringProperty(name);
 		this.korean = new SimpleIntegerProperty(korean);
@@ -18,6 +18,10 @@ public class Student {
 		this.english = new SimpleIntegerProperty(english);
 	}
 	
+	public Student2() {
+		
+	}
+
 	public int getId() {
 		return this.id.get();
 	}
@@ -56,6 +60,10 @@ public class Student {
 
 	public void setEnglish(int english) {
 		this.english.set(english);
+	}
+
+	public void add(Student2 student) {
+		
 	}
 
 }
