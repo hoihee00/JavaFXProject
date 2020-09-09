@@ -11,12 +11,12 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 	<center>
-		<TableView fx:id="tableView" prefHeight="200" prefWidth="420">
+		<txt fx:id="tableView" prefHeight="200" prefWidth="420">
 			<columns>
-				<TableColumn prefWidth="65.0" resizable="false" text="고객번호" />
-				<TableColumn prefWidth="75.0" resizable="false" text="이름" />
-				<TableColumn prefWidth="120.0" resizable="false" text="연락처" />
-				<TableColumn prefWidth="159.0" resizable="false" text="이메일" />
+				<TableColumn id="txtid" prefWidth="65.0" resizable="false" text="고객번호" />
+				<TableColumn id="txtname" prefWidth="75.0" resizable="false" text="이름" />
+				<TableColumn id="txtphone" prefWidth="120.0" resizable="false" text="연락처" />
+				<TableColumn id="txtemail" prefWidth="159.0" resizable="false" text="이메일" />
 			</columns>
 		</TableView>
 	</center>

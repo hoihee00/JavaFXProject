@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+
+<BorderPane prefHeight="217.0" prefWidth="211.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<padding>
+		<Insets topRightBottomLeft="20" />
+	</padding>
+	<bottom>
+		<HBox alignment="CENTER" prefHeight="24.0" prefWidth="116.0" spacing="20" BorderPane.alignment="CENTER">
+			<BorderPane.margin>
+				<Insets topRightBottomLeft="10" />
+			</BorderPane.margin>
+			<children>
+				<Button id="btnFormAdd" text="저장" />
+				<Button id="btnFormCancel" text="취소" />
+			</children>
+		</HBox>
+	</bottom>
+   <left>
+		<GridPane alignment="TOP_CENTER" hgap="10" vgap="10" BorderPane.alignment="CENTER">
+   <children>
+   			<Label alignment="CENTER" prefWidth="50" text="고객번호" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+   			<Label alignment="CENTER" prefWidth="50" text="이름" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+   			<Label alignment="CENTER" prefWidth="50" text="연락처" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+   			<Label alignment="CENTER" prefWidth="50" text="이메일" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+   			<TextField id="txtTitle" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+   			<TextField id="txtAuthor" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   			<TextField id="txtPublisher" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   			<TextField id="txtPrice" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+		</GridPane>
+   </left>
+</BorderPane>

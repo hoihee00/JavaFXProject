@@ -39,7 +39,7 @@ public class RootController implements Initializable {
 	
 	Stage primaryStage;
 	
-	public void setprimaryStage(Stage primaryStage) {
+	public void setrimaryStage(Stage primaryStage) {
 		this.primaryStage = primaryStage;
 	}
 	
