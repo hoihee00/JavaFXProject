@@ -50,7 +50,7 @@ public class GucciController implements Initializable {
 		
 		btnClose.setOnAction(e -> HandleBtnCloseAction());
 
-		btnChartClose.setOnAction(e -> HandleBtnChartCloseAction());
+//		btnChartClose.setOnAction(e -> HandleBtnChartCloseAction());
 		
 	}
 	
