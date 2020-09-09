@@ -23,8 +23,8 @@
 	<bottom>
 		<HBox alignment="CENTER" prefHeight="50" spacing="20">
 			<children>
-				<Button fx:id="btnAdd" text="Add" />
-				<Button fx:id="btnClose" text="Close" />
+				<Button fx:id="btnCustAdd" text="Add" />
+				<Button fx:id="btnCustClose" text="Close" />
 			</children>
 		</HBox>
 	</bottom>

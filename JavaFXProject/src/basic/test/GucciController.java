@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -13,6 +14,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -45,7 +48,7 @@ public class GucciController implements Initializable {
 		// customer 버튼
 		btnCustomer.setOnAction(e -> HandleBtnCustomerAction());
 
-		// sales 버튼
+		// 매출 분석 chart 버튼
 		btnChart.setOnAction(e -> HandleBtnChartAction());
 		
 		btnClose.setOnAction(e -> HandleBtnCloseAction());
@@ -54,9 +57,6 @@ public class GucciController implements Initializable {
 		
 	}
 	
-	public void HandleBtnCloseAction() {
-		Platform.exit();
-	}
 	
 
 	// 고객관리 화면 (customer)
@@ -77,7 +77,7 @@ public class GucciController implements Initializable {
 	} // end of HandleBtnCustomerAction
 	
 
-	// 판매실적 화면 (sales chart)
+	// 매출 분석 chart 화면
 	public void HandleBtnChartAction() {
 		Stage stage = new Stage(StageStyle.UTILITY);
 		stage.initModality(Modality.WINDOW_MODAL);
@@ -89,11 +89,19 @@ public class GucciController implements Initializable {
 
 			stage.setScene(scene);
 			stage.show();
-
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 //		stage.close(); // chart 화면 닫기
 	} // end of HandleBtnChartAction
+
 	
+	
+	// 닫기 버튼 동작
+	public void HandleBtnCloseAction() {
+		Platform.exit();
+	}
+
+
 } // end of class

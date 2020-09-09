@@ -31,10 +31,10 @@
    			<Label alignment="CENTER" prefWidth="50" text="이름" GridPane.columnIndex="0" GridPane.rowIndex="1" />
    			<Label alignment="CENTER" prefWidth="50" text="연락처" GridPane.columnIndex="0" GridPane.rowIndex="2" />
    			<Label alignment="CENTER" prefWidth="50" text="이메일" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-   			<TextField id="txtTitle" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-   			<TextField id="txtAuthor" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-   			<TextField id="txtPublisher" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-   			<TextField id="txtPrice" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   			<TextField id="txtId" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+   			<TextField id="txtName" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   			<TextField id="txtPhone" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+   			<TextField id="txtEmail" prefWidth="100" GridPane.columnIndex="1" GridPane.rowIndex="3" />
    </children>
          <columnConstraints>
             <ColumnConstraints />

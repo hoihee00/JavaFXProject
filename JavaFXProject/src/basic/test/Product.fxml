@@ -13,7 +13,7 @@
       <Label layoutX="125.0" layoutY="9.0" text="TableView" />
       <TableView fx:id="tableView" layoutX="120.0" layoutY="30.0" prefHeight="100.0" prefWidth="200.0">
         <columns>
-          <TableColumn prefWidth="100.0" text="스마트폰" />
+          <TableColumn prefWidth="100.0" text="상품명" />
           <TableColumn prefWidth="100.0" text="이미지" />
         </columns>
       </TableView>
